@@ -11,7 +11,10 @@
 
 </head>
 <body>
-    <header>
+    <div class="notification success"></div>
+    <div class="notification error"></div>
+    <div class="overlay"></div>
+    <header id="header">
         <div class="container">
             <div class="nav-wrap">
                 <div class="burger">
@@ -32,13 +35,16 @@
                     <li><a href="">Successes</a></li>
                     <li><a href="">Store</a></li>
                 </ul>
-                <a class="search-btn"></a>
-                <a class="categories-btn">
+                <div class="search-input">
+                    <input type="text" class="default-input" placeholder="Searching">
+                </div>
+                <a href="" class="search-btn"></a>
+                <a href="" class="categories-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </a>
-                <a class="start-today-btn">Start today!</a>
+                <a href="" class="start-today-btn">Start today!</a>
             </div>
             <ul class="sotial-nav">
                 <li><a href=""><img src="img/socials/tweeter.svg"></a></li>
@@ -59,7 +65,7 @@
                 <form action="">
                     <label class="email-label" for="get_latest_news">Get all the latest news!</label>
                     <div>
-                        <input class="default-input" id="get_latest_news" type="text" placeholder="Enter your email*">
+                        <input name="email" class="default-input" id="get_latest_news" type="text" placeholder="Enter your email*">
                         <button class="blue-btn" type="submit">Sing me up!</button>
                     </div>
                 </form>
@@ -73,7 +79,7 @@
                     <li><a href=""><img src="img/features/huffpost.svg"></a></li>
                     <li><a href=""><img src="img/features/inman.svg"></a></li>
                     <li class="featured-block-nav"><a href=""></a></li>
-                    <a href="" class="scroll down">Scroll down</a>
+                    <a href="#footer" class="scroll down">Scroll down</a>
                 </ul>
             </div>
         </div>
@@ -321,7 +327,7 @@
                             <form action="">
                                 <label class="email-label" for="get_latest">Get all the latest news!</label>
                                 <div>
-                                    <input class="default-input" id="get_latest" type="text" placeholder="Enter your email *">
+                                    <input name="email" class="default-input" id="get_latest" type="text" placeholder="Enter your email *">
                                     <button class="blue-btn" type="submit">Sing me up!</button>
                                 </div>
                             </form>
@@ -375,11 +381,11 @@
                 </div>
             </div>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="small-container">
                 <div class="footer-buildings">
-                    <a href="" class="scroll up">Back to top</a>
+                    <a href="#header" class="scroll up">Back to top</a>
                 </div>
                 <div class="footer-bottom">
                     <div class="footer-logo">
@@ -401,5 +407,6 @@
         </div>
     </footer>
     <script src="js/plugins.min.js"></script>
+    <script src="js/notifications.js"></script>
 </body>
 </html>

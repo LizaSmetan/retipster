@@ -105,6 +105,47 @@ label.email-label{
     }
 
 }
+.notification{
+    position: fixed;
+    top: 10px;
+    width: 40%;
+    right: 30%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s linear;
+    font-size: 24px;
+}
+.notification.error{
+    background-color: #ec5f5f;
+}
+.notification.success{
+    background-color: #6ad16a;
+}
+.notification.active-notification{
+    opacity: 1;
+    z-index: 9999;
+    transition: all .3s linear;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.overlay.visible{
+    opacity: 1;
+    z-index: 9998;
+    transition: all .3s linear;
+}
 .scroll{
     display: block;
     height: 134px;
@@ -384,6 +425,22 @@ header .featured-block .scroll.down{
 }
 .burger span+span{
     margin-top: 10px;
+}
+header .search-input{
+    padding: 5px 0;
+    position: relative;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s linear;
+}
+header .search-input.active{
+    opacity: 1;
+    z-index: 99;
+}
+header .search-input input{
+    position: absolute;
+    right: 10px;
+    width: 500px;
 }
 @media only screen and (max-width: 1919px){
     header{

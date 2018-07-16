@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec61098-ff19-4620-80cd-d0a0eb573538" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/mob_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/notifications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/scroll.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.css" afterPath="$PROJECT_DIR$/app/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home.html" afterPath="$PROJECT_DIR$/app/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/plugins.min.js" afterPath="$PROJECT_DIR$/app/js/plugins.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/main.css" afterPath="$PROJECT_DIR$/src/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/mob_menu.js" afterPath="$PROJECT_DIR$/src/js/mob_menu.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="323" column="126" lean-forward="true" selection-start-line="323" selection-start-column="126" selection-end-line="323" selection-end-column="126" />
+            <state relative-caret-position="59">
+              <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scroll.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/scroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/notifications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -53,18 +76,18 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="1064" column="40" lean-forward="false" selection-start-line="1064" selection-start-column="40" selection-end-line="1064" selection-end-column="40" />
+            <state relative-caret-position="366">
+              <caret line="441" column="16" lean-forward="false" selection-start-line="441" selection-start-column="16" selection-end-line="441" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mob_menu.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mob_menu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/mob_menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -93,14 +116,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tool</find>
-      <find>h3</find>
-      <find>1919</find>
-      <find>.tools-wrap .tools .tools-card::before</find>
       <find>header .featured-block .scroll.down</find>
       <find>header .header-info-wrap .header-info-content</find>
       <find>.join-card .join-card-title</find>
-      <find>header</find>
       <find>header .header-info-wrap .header-info-content h2</find>
       <find>.default-input</find>
       <find>.tools-wrap .tools .tools-card .tools-card-content p</find>
@@ -122,7 +140,12 @@
       <find>header .featured-wrap .featured-block li.featured-block-nav</find>
       <find>header .nav-wrap .logo</find>
       <find>ifr</find>
+      <find>place</find>
+      <find>scroll</find>
+      <find>form</find>
       <find>card</find>
+      <find>star</find>
+      <find>header</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,19 +161,22 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/css/fonts.css" />
         <option value="$PROJECT_DIR$/app/plugins.js" />
-        <option value="$PROJECT_DIR$/src/js/mob_menu.js" />
+        <option value="$PROJECT_DIR$/src/js/scroll.js" />
+        <option value="$PROJECT_DIR$/src/js/notifications.js" />
+        <option value="$PROJECT_DIR$/app/js/notifications.js" />
         <option value="$PROJECT_DIR$/src/css/main.css" />
         <option value="$PROJECT_DIR$/app/home.html" />
+        <option value="$PROJECT_DIR$/src/js/mob_menu.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
-    <service-enabled>false</service-enabled>
+    <service-enabled>true</service-enabled>
     <exe-path />
     <annotation-enable>false</annotation-enable>
-    <other-services-enabled>false</other-services-enabled>
+    <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
@@ -161,10 +187,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="430" />
+    <option name="y" value="60" />
+    <option name="width" value="913" />
+    <option name="height" value="621" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,6 +224,12 @@
             <path>
               <item name="Retipster" type="b2602c69:ProjectViewProjectNode" />
               <item name="Retipster" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Retipster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Retipster" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,9 +257,15 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebStore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UX/ux2_front_end" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Сметан\Desktop\Web\Retipster\app\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Сметан\Desktop\Web\Retipster\src\js" />
       <recent name="C:\Users\Сметан\Desktop\Web\Retipster" />
@@ -259,12 +297,12 @@
       <updated>1531661294721</updated>
       <workItem from="1531661296107" duration="308000" />
       <workItem from="1531661605404" duration="51843000" />
-      <workItem from="1531729466394" duration="14999000" />
+      <workItem from="1531729466394" duration="19816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67150000" />
+    <option name="totallyTimeSpent" value="71967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -362,10 +400,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/mob_menu.js">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        <state relative-caret-position="-85">
+          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -378,26 +432,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/app/js/notifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="1064" column="40" lean-forward="false" selection-start-line="1064" selection-start-column="40" selection-end-line="1064" selection-end-column="40" />
+        <state relative-caret-position="180">
+          <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="323" column="126" lean-forward="true" selection-start-line="323" selection-start-column="126" selection-end-line="323" selection-end-column="126" />
+        <state relative-caret-position="59">
+          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="441" column="16" lean-forward="false" selection-start-line="441" selection-start-column="16" selection-end-line="441" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/mob_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
           <folding />
         </state>
       </provider>
