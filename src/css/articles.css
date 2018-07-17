@@ -1,0 +1,149 @@
+@media only screen and (min-width: 1920px) {
+    .articles-page header{
+        height: 760px;
+    }
+}
+.articles-page header{
+    background: none;
+}
+.articles-page header .header-info-wrap{
+    display: flex;
+}
+.articles-page .video-iframe{
+    margin-top: 192px;
+    margin-left: 73px;
+}
+.articles-page header .header-info-wrap .header-info-content .little-line{
+    margin: 30px 0 67px;
+}
+.articles-page .most-pop-lessons .most-pop-form .most-pop-form-content{
+    padding:24px 0 35px 63px;
+}
+.articles-page .most-pop-lessons .most-pop-form .most-pop-form-content h6{
+    margin-right: 304px;
+}
+ul.sort-by{
+    display: inline-block;
+}
+ul.sort-by li{
+    display: inline-block;
+    border-left: 1px solid #dfe4e7;
+    padding: 0 57px 0 60px;
+}
+ul.sort-by li a{
+    font-size: 23.04px;
+    letter-spacing: .04em;
+    color: #5c6e7b;
+    line-height: 38.4px;
+}
+.articles-page .most-pop-lessons .most-pop-form{
+    margin-bottom: 133px;
+}
+.articles-page .most-pop-lessons .blue-btn{
+    margin: 67px 0 85px;
+}
+.articles-page .most-pop-lessons{
+    margin-bottom: 85px;
+}
+.articles-page .footer-buildings{
+    padding-top: 107px;
+    background: url(../img/buildings_bottom.svg) no-repeat bottom/100% 350px;
+}
+@media only screen and (max-width: 1919px){
+    .articles-page .video-iframe{
+        width: 431px;
+        height: 300px;
+        margin-top: 85px;
+        margin-left: 2%;
+    }
+    .articles-page .video-iframe::after{
+        transform: translateY(26px) translateX(26px);
+    }
+    .articles-page .header{
+        margin-bottom: 70px;
+    }
+    .articles-page .most-pop-lessons .most-pop-form .most-pop-form-content {
+        padding: 34px 0 24px 30px;
+    }
+    .articles-page .most-pop-lessons .most-pop-form .most-pop-form-content h6 {
+        margin-right: 68px;
+    }
+    ul.sort-by li {
+        padding: 0 20px;
+    }
+    .articles-page .most-pop-lessons .most-pop-form {
+        margin-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .articles-page header .header-info-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles-page header .header-info-wrap .header-info-content .little-line{
+        margin: 30px 0 10px;
+    }
+    .articles-page header{
+        margin-bottom: 38px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .articles-page .footer-buildings {
+        padding-top: 52px;
+        background: url(../img/buildings_bottom.svg) no-repeat bottom/100% auto;
+    }
+    .articles-page .most-pop-lessons .most-pop-form .most-pop-form-content h6{
+        margin-right: 0;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    ul.sort-by{
+        width: 100%;
+        text-align: center;
+    }
+    ul.sort-by li:last-child{
+        border-right: 1px solid #dfe4e7;
+    }
+}
+@media only screen and (max-width: 767px){
+    .articles-page .most-pop-lessons .blue-btn{
+        margin: 10px 0;
+    }
+    .articles-page .most-pop-lessons .most-pop-form .most-pop-form-content {
+        padding: 20px 0 23px 0px;
+    }
+    ul.sort-by li{
+        padding: 0 14px;
+    }
+}
+@media only screen and (max-width: 575px){
+    ul.sort-by li {
+        padding: 0 14px;
+    }
+    ul.sort-by li a{
+        font-size: 18.04px;
+    }
+    .articles-page .video-iframe {
+        width: 350px;
+        height: 217px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 479px){
+    .articles-page .video-iframe {
+        width: 240px;
+        height: 160px;
+        margin-top: 50px;
+    }
+    .articles-page header .header-info-wrap .header-info-content p{
+        max-width: none;
+    }
+    .articles-page header .header-info-wrap .header-info-content h2{
+        font-size: 27.5px;
+    }
+    ul.sort-by li{
+        width: 100%;
+        border: 1px solid #dfe4e7;
+    }
+}

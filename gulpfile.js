@@ -14,7 +14,10 @@ var gulp         = require('gulp'), // Подключаем Gulp
 gulp.task('css', function(){ // Создаем таск Sass
     return gulp.src('src/css/**/*.css') // Берем источник
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-        .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+        .pipe(concat('style.min.css'))
+        .pipe(cssnano()) // Сжимаем
+        .pipe(gulp.dest('app/css')) // Выгружаем в папку app/css
+        // .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
@@ -46,13 +49,6 @@ gulp.task('scripts', function() {
         .pipe(concat('plugins.min.js')) // Собираем их в кучу в новом файле plugins.min.js
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
-});
-
-gulp.task('css-libs', ['css'], function() {
-    return gulp.src('app/css/style.css') // Выбираем файл для минификации
-        .pipe(cssnano()) // Сжимаем
-        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-        .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
 gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite'], function() {
