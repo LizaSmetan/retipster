@@ -63,8 +63,11 @@ h6{
     line-height: 61px;
     background-color: #fff;
 }
-.default-input::placeholder{
-    color: #c7ced3;
+.default-input[name="email"]::placeholder{
+    background-image: url('../img/red_star.svg');
+    background-repeat: no-repeat;
+    background-size: 6px;
+    background-position: 144px 3px;
 }
 .blue-btn{
     font-weight: 700;
@@ -132,7 +135,7 @@ label.email-label{
 }
 .notification.active-notification{
     opacity: 1;
-    z-index: 9999;
+    z-index: 99999;
     transition: all .3s linear;
 }
 .overlay{
@@ -149,7 +152,7 @@ label.email-label{
 }
 .overlay.visible{
     opacity: 1;
-    z-index: 9998;
+    z-index: 99998;
     transition: all .3s linear;
 }
 .scroll{
@@ -189,6 +192,19 @@ label.email-label{
         margin: 0 auto;
     }
 }
+@media only screen and (max-width: 767px){
+    .notification{
+        width: 60%;
+        right: 20%;
+    }
+}
+@media only screen and (max-width: 479px){
+    .notification{
+        width: 80%;
+        right: 10%;
+        padding: 15px;
+    }
+}
 header{
     background-image: url("../img/pic_01.svg");
     background-repeat: no-repeat;
@@ -201,9 +217,16 @@ header .nav-wrap{
     background-color: #fff;
     box-shadow: 0 9px 0 rgba(0, 0, 0, .04);
     border-radius: 0 0 2px 2px;
-    overflow: hidden;
     height: 70px;
     margin: 0 192px;
+    transition: all .3s linear;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+header .nav-wrap.hidden{
+    transform: translateY(-75px);
+    transition: all .3s linear;
 }
 header .nav-wrap .logo{
     padding: 21px 0 15px 25px;
@@ -328,7 +351,7 @@ header .header-info-wrap .header-info-content h2{
     color: #2c4c61;
     max-width: 670px;
     line-height: 70px;
-    margin-top: 178px;
+    padding-top: 178px;
     margin-bottom: 34px;
 }
 header .header-info-wrap .header-info-content p{
@@ -380,6 +403,12 @@ header .featured-wrap .featured-block{
     border: 2px solid #e0e5e8;
     padding: 33px 0;
     margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+header .featured-wrap .featured-block ul{
+    transform: translateX(0);
+    transition: all .3s linear;
 }
 header .featured-wrap .featured-block li{
     width: 249px;
@@ -393,17 +422,17 @@ header .featured-wrap .featured-block li a img{
 header .featured-wrap .featured-block li+li{
     border-left: 1px solid #e0e5e8;
 }
-header .featured-wrap .featured-block li.featured-block-nav{
+header .featured-wrap .featured-block-nav a{
     height: 33px;
     width: 33px;
     background: url("../img/arrow_left.svg") no-repeat center/contain #fff;
     position: absolute;
-    top: 27px;
-    right: -14px;
+    top: 62%;
+    right: 22.7%;
     border-left: none;
 }
-header .featured-wrap .featured-block li.featured-block-nav:first-child{
-    left: -14px;
+header .featured-wrap .featured-block-nav .left{
+    left: 22.7%;
     right: auto;
     transform: rotate(180deg);
 }
@@ -434,7 +463,6 @@ header .featured-wrap .scroll.down{
 }
 header .search-input{
     padding: 5px 0;
-    position: relative;
     opacity: 0;
     z-index: -1;
     transition: all .3s linear;
@@ -445,8 +473,8 @@ header .search-input.active{
 }
 header .search-input input{
     position: absolute;
-    right: 10px;
-    width: 500px;
+    right: 5px;
+    top: 70px;
 }
 @media only screen and (max-width: 1919px){
     header{
@@ -456,7 +484,9 @@ header .search-input input{
         top: 335px;
     }
     header .nav-wrap{
-        margin: 0 7%;
+        margin: 0;
+        right: 6%;
+        left: 6%;
     }
     header .nav-wrap .logo{
         margin-right: 9%;
@@ -473,7 +503,7 @@ header .search-input input{
         padding-right: 10px;
     }
     header .header-info-wrap .header-info-content h2{
-        margin-top: 86px;
+        padding-top: 86px;
     }
     header .header-info-wrap .header-info-content{
         width: 60%;
@@ -498,20 +528,32 @@ header .search-input input{
     header .featured-wrap .scroll.down{
         right: 3%;
     }
-
+    header .featured-wrap .featured-block-nav .right{
+        right: 13.7%;
+    }
+    header .featured-wrap .featured-block-nav .left{
+        left: 13.7%;
+    }
 }
 @media only screen and (max-width: 1199px){
     header{
         margin-bottom: 80px;
     }
     header .nav-wrap{
-        margin: 0;
+        left: 0;
+        right: 0;
     }
     header .nav-wrap .logo{
-        margin-right: 5%;
+        margin-right: 3%;
     }
     header .header-info-wrap .header-info-content{
         width: 94%;
+    }
+    header .featured-wrap .featured-block-nav .left{
+        left: 12.7%;
+    }
+    header .featured-wrap .featured-block-nav .right{
+        right: 12.7%;
     }
 
 
@@ -524,6 +566,7 @@ header .search-input input{
         transition: all .3s linear;
         opacity: 1;
         z-index: 999;
+        height: auto;
     }
     header .nav-wrap ul.nav li{
         margin-left: 17px;
@@ -540,6 +583,7 @@ header .search-input input{
         z-index: -1;
         transition: all .3s linear;
         overflow: hidden;
+        height: 0px;
     }
     header .featured-wrap .featured-block{
         width: 90%;
@@ -556,6 +600,12 @@ header .search-input input{
         background-size: 10px 30px;
         height: 58px;
         background-position: bottom center;
+    }
+    header .featured-wrap .featured-block-nav .left{
+        left: 2.7%;
+    }
+    header .featured-wrap .featured-block-nav .right{
+        right: 2.7%;
     }
 }
 @media only screen and (max-width: 767px){
@@ -586,17 +636,20 @@ header .search-input input{
         white-space: nowrap;
         overflow: hidden;
     }
-    header .featured-wrap .featured-block li.featured-block-nav{
-        right: -1px;
+    header .featured-wrap featured-block-nav a{
+        right: 3px;
     }
-    header .featured-wrap .featured-block li.featured-block-nav:first-child{
-        left: -1px;
+    header .featured-wrap .featured-block-nav .left{
+        left: 3px;
         right: auto;
+    }
+    header .featured-wrap .featured-block-nav .right{
+        right: 3px;
     }
 }
 @media only screen and (max-width: 575px){
     header .header-info-wrap .header-info-content h2{
-        margin-top: 44px;
+        padding-top: 90px;
         font-size: 36px;
         line-height: 44px;
     }
@@ -847,7 +900,9 @@ header .search-input input{
         font-size: 30px;
     }
     .tools-wrap .tools .tools-card::before{
-        left: 33%;
+        left: 37%;
+        width: 26%;
+        height: 20%;
     }
 }
 .bonus-card{
@@ -944,6 +999,9 @@ header .search-input input{
     }
 }
 @media only screen and (max-width: 991px){
+    .bonus-card{
+        margin: 70px 15px;
+    }
     .bonus-card .bonus-card-body{
         flex-direction: column;
         align-items: center;
@@ -972,6 +1030,9 @@ header .search-input input{
     }
 }
 @media only screen and (max-width: 479px){
+    .bonus-card{
+        margin: 70px 10px;
+    }
     .card-header{
         line-height: 18px;
         font-size: 13px;
@@ -1256,6 +1317,10 @@ header .search-input input{
     }
 }
 @media only screen and (max-width: 991px){
+    .most-pop-lessons .most-pop-form{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
     .most-pop-lessons .most-pop-form .most-pop-form-content{
         height: auto;
         padding: 10px;
@@ -1285,6 +1350,7 @@ header .search-input input{
     }
     .most-pop-lessons .succeed-card{
         height: auto;
+        margin: 0 10px;
     }
     .most-pop-lessons .succeed-card .succed-card-body{
         height: auto;
@@ -1292,6 +1358,7 @@ header .search-input input{
     .most-pop-lessons .succeed-card .succed-card-body form .default-input{
         width: 60%;
     }
+
 }
 @media only screen and (max-width: 767px){
     .most-pop-cards .most-pop-card .most-pop-card-desc{
@@ -1305,6 +1372,15 @@ header .search-input input{
     .most-pop-lessons form .blue-btn{
         width: 100%;
     }
+    .most-pop-lessons .most-pop-form .most-pop-form-content h6{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .most-pop-lessons .most-pop-form .most-pop-form-content{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 575px){
     .most-pop-cards .most-pop-card .most-pop-card-desc{
@@ -1313,20 +1389,11 @@ header .search-input input{
     .most-pop-cards .most-pop-banner h3{
         font-size: 35px;
     }
-    .most-pop-lessons .most-pop-form .most-pop-form-content h6{
-        width: 100%;
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
     .most-pop-cards .most-pop-card .most-pop-card-img{
         height: 220px;
     }
 }
 @media only screen and (max-width: 479px){
-    .most-pop-lessons .most-pop-form .most-pop-form-content{
-        text-align: center;
-    }
     .most-pop-lessons .most-pop-form{
         height: auto;
         padding-bottom: 34px;
@@ -1351,8 +1418,16 @@ header .search-input input{
         font-size: 29px;
     }
     .most-pop-lessons .succeed-card .succed-card-body{
-        padding: 20px;
+        padding: 10px;
     }
+    .most-pop-lessons .succeed-card label.email-label{
+        font-size: 17.04px;
+        background-color: #fff;
+    }
+    .most-pop-lessons .succeed-card .succed-card-body p{
+        margin-bottom: 22px;
+    }
+
 }
 .join-card{
     height: 439px;
@@ -1422,6 +1497,9 @@ header .search-input input{
     }
 }
 @media only screen and (max-width: 991px){
+    .join-card{
+        margin: 0 14px;
+    }
     .join-card .join-card-title{
         width: 85%;
         height: 100px;
@@ -1456,6 +1534,11 @@ header .search-input input{
         padding-bottom: 20px;
     }
 
+}
+@media only screen and (max-width: 479px){
+    .join-card .join-card-title h3{
+        line-height: 35px;
+    }
 }
 footer{
     height: 623px;
